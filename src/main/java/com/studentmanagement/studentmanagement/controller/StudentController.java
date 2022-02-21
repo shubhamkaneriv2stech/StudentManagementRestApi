@@ -45,34 +45,7 @@ public class StudentController {
 		return studentService.getStudentsList();
 	}
 
-//	// get the Student details
-//	@GetMapping("/students/{studentId}")
-//	public ResponseEntity<Object> getStudent(@PathVariable Long studentId) {
-//		try {
-//
-//			StudentVO studentVO=studentService.getStudent(studentId);
-//			
-//			if (studentVO==null) {
-//				throw new DataNotFoundException("Data Not Found");
-//			}
-//			return ResponseEntity.ok().body(studentVO);
-//		}
-//
-//		catch (DataNotFoundException e) {
-//			logger.error("===Error While fetching in  StudentController {}", e);
-//
-//			return ResponseEntity.status(HttpStatus.NOT_FOUND)
-//					.body("Student  With Roll No " + studentId + " not Found");
-//		}
-//		catch (Exception e) {
-//
-//			logger.error("===Error While fetching in  StudentController {}", e);
-//			return ResponseEntity.status(HttpStatus.NOT_FOUND)
-//					.body("Student  With Roll No " + studentId + " not Found");
-//		}
-//	}
-//	
-//	
+
 
 	// get the Student details
 	@GetMapping("/students/{studentId}")
